@@ -6,4 +6,6 @@ router.get("/", coursesController.findAll);
 router.get("/:courseId", coursesController.find);
 router.post("/", coursesController.addCourse);
 router.put("/enroll", coursesController.enrollCourse);
+router.put("/addSyllabus/:courseId", coursesController.addSyllabus);
+router.put("/addContent/:courseId", coursesController.addContent);
 module.exports = router;
